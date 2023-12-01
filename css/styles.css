@@ -89,12 +89,12 @@ img {
 }
 
 
-.nav .nav-menu .nav-menu-link{
+.nav .nav-menu .nav-menu-link.main{
     position: relative;
     color: var(--ocean);
 }
 
-.nav .nav-menu .nav-menu-link::after{
+.nav .nav-menu .nav-menu-link.main::after{
     content: "";
     position: absolute;
     left: 0;
@@ -102,7 +102,16 @@ img {
     height: 4px;
     background-color: var(--ocean);
     border-radius: 2px;
+    display: block;
+    width: 100%;
 }
+
+
+.nav .nav-menu .nav-menu-link:hover,
+.nav .nav-menu .nav-menu-link:focus{
+    color: var(--ocean);
+}
+
 
 .site-header-logo{
     position: relative;
@@ -143,7 +152,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -166,7 +175,7 @@ img {
 
 
 .address-menu-link{
-color: var(--main-slate);
+    color: var(--main-slate);
     padding-top: 24px;
     padding-bottom: 24px;
     font-size: 16px;
