@@ -765,6 +765,10 @@ screen and (min-resolution: 2dppx) {
         justify-content: center ;
     }
 
+    .footer-logo-media-container{
+        gap: 72px;
+    }
+
     .footer-form {
         /* flex-direction: column; */
     }
@@ -779,6 +783,12 @@ screen and (min-resolution: 2dppx) {
 
     .footer-form-input{
         margin-bottom: 16px;
+    }
+
+    .footer-subscribe-paragraph {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -861,11 +871,6 @@ screen and (min-resolution: 2dppx) {
     background-color: var(--green);
 }
 
-/* .footer-form {
-    display: flex;
-    gap: 24px;
-} */
-
 .footer-subscribe-paragraph {
     font-size: 16px;
     font-weight: 500;
@@ -873,9 +878,6 @@ screen and (min-resolution: 2dppx) {
     letter-spacing: 0.02em;
     color: var(--white);
     margin-bottom: 16px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -1106,12 +1108,32 @@ screen and (min-resolution: 2dppx) {
 /* SECTION 5-TABLET */
 
 /* FOOTER-TABLET */
+.footer-container {
+    gap: 24px;
+}
+
+.footer-logo-media-container{
+    display: flex;
+}
+
+.footer-form{
+    display: flex;
+    gap: 24px;
+}
+
 @media screen and (max-width: 1157px){
     .footer-container{
-        gap: 24px;
-        
+        flex-direction: column;
+        gap: 72px;
+        margin-left: 108px;
+        margin-right: 164px;
+    }
+
+    .footer-logo-media-container {
+        gap: 16px;
     }
 }
+
 }
 /* FOOTER-TABLET */
 
@@ -1291,13 +1313,21 @@ screen and (min-resolution: 2dppx) {
     .site-footer {
         padding-top: 100px;
         padding-bottom: 100px;
+        justify-content: space-between;
     }
 
-    .footer-logo-container {
+    .footer-container{
+        justify-content: space-between;
+    }
+
+    .footer-logo-media-container {
+        gap: 120px;
+    }
+    /* .footer-logo-container {
         margin-right: 120px;
     }
     .footer-media {
-        margin-right: 120px;
-    }
+        margin-right: 90px;
+    } */
 }
 /* DESKTOP */
