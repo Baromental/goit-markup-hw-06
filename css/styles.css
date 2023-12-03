@@ -1323,6 +1323,8 @@ screen and (min-resolution: 2dppx) {
     .footer-logo-media-container {
         gap: 120px;
     }
+
+    
     /* .footer-logo-container {
         margin-right: 120px;
     }
